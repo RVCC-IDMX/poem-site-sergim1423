@@ -3,8 +3,8 @@
 @use "../base/typography" as type;
 
 body {
-  font-family: type.$font;
-  background-color: var.$bg-very-light;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(27, 27, 51);
   width: min(100% - 2rem, 60ch);
   margin-inline: auto;
   margin-block: 4rem;
@@ -19,4 +19,69 @@ h1 {
   height: 100px;
   border-radius: 90%;
   background-color: yellow;
+}
+.heading{
+  text-align: left;
+  font-size: 6vw;
+  padding-left: 4%;
+  color: whitesmoke;
+}
+.title{
+  text-align: center;
+  color: gold;
+  font-size: 8vw;
+  font-weight: 600;
+  
+}
+.author{
+  text-align: right;
+  font-style: italic;
+  font-size: 4vw;
+  padding-right: 4%;
+  color: whitesmoke;
+}
+.poem{
+  text-align: center;
+  font-size: 7vw;
+  color: whitesmoke;
+}
+.balls{
+  padding: 4%;
+}
+@media screen and (min-width:600px){
+  .heading{
+      font-size: 6vw;
+  }
+  .title{
+      font-size: 6vw;
+  }
+  .author{
+      font-size: 3vw;
+  }
+  .poem{
+      font-size: 5vw;
+  }
+}
+@media screen and (min-width:960px){
+  .balls{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+  }
+  .heading{
+      font-size: 32px;
+      padding-left: 10%;
+      padding-top: 3%;
+  }
+  .title{
+      font-size: 46px;
+  }
+  .author{
+      font-size: 24px;
+      padding-top: 3%;
+  }
+  .poem{
+      font-size: 38px
+  }
 }
